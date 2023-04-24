@@ -22,8 +22,9 @@ html {
 grand-wrapper {
   max-width: 1920px;
   font-family: "Montserrat", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -1347,12 +1348,12 @@ select {
 
 
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 767px) {
   .grand-wrapper {
       max-width: none;
   }
   .container {
-      max-width: 481px;
+      max-width: 428px;
       max-height: 926px;
   }
   .container.menu-wrapper {
@@ -1382,60 +1383,19 @@ select {
   }
 
   /*Container 2*/
-
-  .container-two {
-      max-width: 380px;
-      max-height: 522px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 150px 24px 108px 24px;    
+  .container-two .action{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
-
-  main .container-two .description .description__title {
-      font-size: 24px;
-      line-height: 29px;
-      margin: 0;
-  }
-}
-
- /* main .container-two .description .description__text-style {
-      font-size: 14px;
-      line-height: 17px;
-      margin: 0;
-  }
-
-  main .container-two .action {
-      padding-left: 24px;
-      margin-right: 24px;
-
-  }
-
-  main .container-two .action .action-wrapper .action__main {
-      padding-top: 60px;
-      margin-bottom: 40px;
-      margin: 0;
-  }
-
-  .container-two .action .action-wrapper .action__main .action__main-info {
-      width: 160px;
-      height: 100px;
-  }
-
-  .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details-wrap .action-details__text .action-details__text_style {
-      font-size: 24px;
-      line-height: 29px;
-  }
-
-  .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details__text-two .action-details__text-two_style {
-      font-size: 16px;
-      line-height: 17px;
-      text-align: center;
+  .container-two .action .action-wrapper {
+    width: 160px;
+    min-height: 117px;
+    padding-right: 24px;
   }
 
   /*Container 3*/
-
-  /*.container-three {
+  .container-three {
       padding-top: 14vh;
   }
 
@@ -1448,7 +1408,7 @@ select {
   }
 
   .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar {
-      max-width: 610px;
+      max-width: 100%;
   }
 
   .container-three .planing .planing__title {
@@ -1461,10 +1421,10 @@ select {
 
   /*Container 4*/
 
-  /*.container-four {
+  .container-four {
       flex-direction: column;
       margin: 0;
-      padding-left: 79px;
+      padding-left: 24px;
   }
 
   .container-four .route .route__title {
@@ -1482,22 +1442,22 @@ select {
   }
 
   .container-four .route {
-      margin-bottom: 81px;
+      margin-bottom: 60px;
   }
 
   .container-four .route__image {
-      width: 610px;
+      width: 100%;
   }
 
   /*Container 5*/
 
-  /*.container-five {
-      width: 786px;
+  .container-five {
+      width: 100%;
       margin-top: 150px;
   }
 
   .container-five .container-five__title .container-five__title-style {
-      padding-left: 79px;
+      padding-left: 24px;
       font-family: 'Montserrat';
       font-size: 24px;
       line-height: 29px;
@@ -1516,7 +1476,7 @@ select {
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
-      width: 159px;
+      width: 180px;
   }
 
   .container-five .container-five__info .element-two {
@@ -1524,7 +1484,7 @@ select {
       grid-column-end: 5;
       grid-row-start: 1;
       grid-row-end: 2;
-      width: 200px;
+      width: 180px;
   }
 
   .container-five .container-five__info .element-three {
@@ -1532,13 +1492,13 @@ select {
       grid-column-end: 7;
       grid-row-start: 1;
       grid-row-end: 2;
-      width: 200px;
+      width: 180px;
   }
 
   .container-five .container-five__info .element-four {
       grid-column-start: 2;
       grid-column-end: 4;
-      width: 200px;
+      width: 180px;
       margin-top: 0;
   }
 
@@ -1549,7 +1509,7 @@ select {
   .container-five .container-five__info .element-five {
       grid-column-start: 4;
       grid-column-end: 6;
-      width: 200px;
+      width: 180px;
       margin-top: 0;
   }
 
@@ -1564,13 +1524,13 @@ select {
 
   /*Container 6*/
 
- /* .container-six {
+  .container-six {
       display: none;
   }
 
   /*Container 7*/
 
-  /*.container-seven {
+  .container-seven {
       width: 768px;
   }
 
@@ -1591,9 +1551,9 @@ select {
       grid-template-columns: repeat(3, 33%);
       grid-template-rows: repeat(4, 140px);
       box-sizing: border-box;
-      width: 768px;
+      width: 380px;
       width: 100%;
-      height: 650px;
+      height: 799px;
       padding-top: 90px;
   }
 
@@ -1644,7 +1604,7 @@ select {
 
   /*Feedback*/
 
- /* .container-seven__feedback .container-seven__feedback-title {
+  .container-seven__feedback .container-seven__feedback-title {
       margin: 0;
       padding: 0;
   }
@@ -1676,7 +1636,7 @@ select {
 
   /*Booking*/
 
-  /*.container-seven__booking .container-seven__booking-img {
+  .container-seven__booking .container-seven__booking-img {
       display: none;
   }
 
@@ -1693,45 +1653,38 @@ select {
 
   /*Footer*/
 
-  /*.footer {
-      margin-top: 51px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__logo {
+    padding-left: 0;
+    order: 1;
+  }
+  .footer__mail {
+    padding-right: 0;
+  }
+  .footer__contacts {
+    width: auto;
+  }
+  .footer__menu-contacts {
+    order: 3;
+    width: 100%;
+  }
+  .footer__mail {
+    margin-bottom: 65px;
+    order: 2;
+    gap: 10px;
+  }
+  .footer__mail-ico {
+    display: none;
+  }
+  .footer__menu {
+    padding-left: 0;
+  }
+  .footer .footer__mail {
+    padding-right: 0;
+    padding-left: 37px;
   }
 
-  .footer .footer__wrapper {
-      max-width: 610px;
-      width: 100%;
-  }
-
-  .footer .footer__wrapper .footer__contacts-one {
-      align-items: center;
-      justify-content: flex-start;
-  }
-
-  .footer .footer__wrapper .footer__contacts-one .footer__logo {
-      margin-right: 42px;
-  }
-
-  .footer .footer__wrapper .footer__contacts-one .footer__menu .footer__menu-link {
-      font-size: 12px;
-      line-height: 15px;
-  }
-
-  .footer .footer__contacts-two {
-      align-items: center;
-      justify-content: space-around;
-  }
-
-  .footer .footer__contacts-two .footer__sns {
-      font-size: 12px;
-      line-height: 15px;
-      justify-content: center;
-      max-width: 200px;
-      width: 100%;
-  }
-
-  .footer .footer__contacts-two .footer__message .footer__mail .footer__mail-ico {
-      font-size: 12px;
-      line-height: 15px;
-  }
-}
-
+  
